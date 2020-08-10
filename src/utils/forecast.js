@@ -20,7 +20,8 @@ const forcast = (latitude, longitude, callback) => {
         else {
 
             const data = body.current;
-            callback(undefined,`It is currently ${data.temperature}℃. And feels like ${data.feelslike}℃`);
+            callback(undefined,`It is currently ${data.temperature}℃. And feels like ${data.feelslike}℃.
+             The Humidity is ${data.humidity}%`);
   
         }
 
